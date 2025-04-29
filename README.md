@@ -14,3 +14,9 @@ https://developers.google.com/workspace/chat/quickstart/apps-script-app
 ## Create the Project
 
 https://script.google.com/home/projects/create
+
+
+
+* https://console.cloud.google.com/projectcreate
+* https://console.cloud.google.com/apis/library/chat.googleapis.com
+

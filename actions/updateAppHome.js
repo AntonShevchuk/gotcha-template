@@ -7,13 +7,13 @@
  *     command ID and the user who triggered it.
  * @return {Object}
  */
-function updateAppHomeCard(event) {
+function updateAppHome(event) {
   return {
-    "render_actions": {
-      "action": {
-        "navigations": [
+    render_actions: {
+      action: {
+        navigations: [
           {
-            "updateCard": cardHome()
+            updateCard: cardHome()
           }
         ]
       }

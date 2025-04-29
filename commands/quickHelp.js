@@ -5,10 +5,10 @@
  */
 function quickHelp(event) {
   return {
-    'privateMessageViewer': event.user,
-    'text': [
+    privateMessageViewer: event.user,
+    text: [
       'Template for Google Chat Bot',
-      'To change this text, edit the file "commands/quickHelp.js"',
+      'To change this text, edit the file `commands/quickHelp.js`',
     ].join('\n')
   };
 }
