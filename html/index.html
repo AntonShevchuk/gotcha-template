@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gotcha–Template</title>
+    <?!= include('html/partials/stylesheet'); ?>
+</head>
+<body>
+
+<?!= include('html/partials/header'); ?>
+
+<main>
+    <div class="container">
+        <section id="intro">
+            <h2>Welcome!</h2>
+            <p>
+                Gotcha provides a foundational template for building Google Chat Bots
+                with a backend powered by Google Apps Script.
+            </p>
+        </section>
+
+        <section id="getting-started" class="cta-section">
+            <h2>Get Started</h2>
+            <p>Ready to try it out? Find the latest release or dive into the source code.</p>
+            <a href="https://github.com/AntonShevchuk/gotcha-template/releases" class="button primary" target="_blank">Download
+                Latest</a> <a href="https://github.com/AntonShevchuk/gotcha-template" class="button secondary"
+                              target="_blank">View Source (GitHub)</a></section>
+
+        <section id="contribute">
+            <h2>Contribute</h2>
+            <p>
+                This project is open source and contributions are welcome!
+            </p>
+            <p>
+                Whether it's reporting bugs, suggesting features, improving documentation,
+                or writing code, your help is appreciated.
+            </p>
+            <p>
+                Check out the <a href="https://github.com/AntonShevchuk/gotcha-template/issues" target="_blank">issue
+                tracker</a> and our <a href="https://github.com/AntonShevchuk/gotcha-template/CONTRIBUTING.md">contributing guidelines</a>. </p>
+        </section>
+    </div>
+</main>
+
+<?!= include('html/partials/footer'); ?>
+<?!= include('html/partials/javascript'); ?>
+
+</body>
+</html>

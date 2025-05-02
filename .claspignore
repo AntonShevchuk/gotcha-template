@@ -1,4 +1,5 @@
 # ignore even valid files if in…
 .git/**
 .idea/**
+.ignore/**
 node_modules/**

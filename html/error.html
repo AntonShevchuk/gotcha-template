@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base target="_top">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Error</title>
+    <?!= include('html/stylesheet'); ?>
+    <style>
+        .error {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .error h2 {
+            color: #dc3545;
+            margin-bottom: 20px;
+            border-bottom: none;
+        }
+
+        .error p {
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .error span {
+            font-size: 4em;
+            font-weight: bold;
+            color: #6c757d;
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<?!= include('html/partials/header'); ?>
+
+<main>
+    <div class="container">
+        <section class="error">
+            <span><?= data.code ?></span>
+            <h2>Oops! Something Went Wrong</h2>
+            <p><?= data.message ?></p>
+        </section>
+    </div>
+</main>
+
+<?!= include('html/partials/footer'); ?>
+<?!= include('html/partials/javascript'); ?>
+
+</body>
+</html>

@@ -1,7 +1,7 @@
 # Support Page
 
-Welcome to the GOTCHA ("the Bot") support page!
-Here you'll find information on how to get help with using the Bot.
+Welcome to the support page!
+Here you'll find information on how to get help with using this Google Chat Bot ("the Bot").
 
 ## Frequently Asked Questions
 
