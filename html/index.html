@@ -24,9 +24,13 @@
         <section id="getting-started" class="cta-section">
             <h2>Get Started</h2>
             <p>Ready to try it out? Find the latest release or dive into the source code.</p>
-            <a href="https://github.com/AntonShevchuk/gotcha-template/releases" class="button primary" target="_blank">Download
-                Latest</a> <a href="https://github.com/AntonShevchuk/gotcha-template" class="button secondary"
-                              target="_blank">View Source (GitHub)</a></section>
+            <a href="https://github.com/AntonShevchuk/gotcha-template/releases"
+               class="button primary" target="_blank">
+                Download Latest</a>
+            <a href="https://github.com/AntonShevchuk/gotcha-template"
+               class="button secondary" target="_blank">
+                View Source (GitHub)</a>
+        </section>
 
         <section id="contribute">
             <h2>Contribute</h2>
@@ -41,10 +45,27 @@
                 Check out the <a href="https://github.com/AntonShevchuk/gotcha-template/issues" target="_blank">issue
                 tracker</a> and our <a href="https://github.com/AntonShevchuk/gotcha-template/CONTRIBUTING.md">contributing guidelines</a>. </p>
         </section>
+
+        <section id="ping" class="cta-section">
+            <h2>API Demonstration</h2>
+            <p>Click the button below to test the connection with the server.
+                This will make a simple API call to verify
+                that everything is working correctly.</p>
+            <button class="button primary" onclick="ping()">Test Connection</button>
+        </section>
     </div>
 </main>
 
 <?!= include('html/partials/footer'); ?>
+<script>
+  /**
+   * Retrieves the home URL of the current webpage.
+   * @return {string} The complete home URL based on the current window location.
+   */
+  function getPageURL () {
+    return "<?= ScriptApp.getService().getUrl() ?>"
+  }
+</script>
 <?!= include('html/partials/javascript'); ?>
 
 </body>

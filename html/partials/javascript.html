@@ -1,3 +1,19 @@
 <script>
-
+  /**
+   * Sends a request to the server to perform a "ping" operation.
+   * This method uses Google Apps Script to make a server-side call. The response
+   * or error from the server is handled via the provided success and failure handlers.
+   * The server is expected to respond to the "ping" action.
+   *
+   * https://developers.google.com/apps-script/guides/html/reference/run
+   *
+   * @return {void} There is no returned data from this function, although the server's
+   * response or error is logged to the console via the respective handlers.
+   */
+  function ping () {
+    google.script.run
+      .withSuccessHandler((response) => console.log(response))
+      .withFailureHandler((error) => console.log(error))
+      .doPing({ ping: 'pong' })
+  }
 </script>
